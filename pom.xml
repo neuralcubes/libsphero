@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>uk.co.neuralcubes</groupId>
+  <artifactId>libsphero</artifactId>
+  <version>3.1.159</version>
+  <packaging>jar</packaging>
+  <scm>
+    <connection>scm:git:git@github.com:neuralcubes/libsphero.git</connection>
+    <url>scm:git:git@github.com:neuralcubes/libsphero.git</url>
+    <developerConnection>scm:git:git@github.com:neuralcubes/libsphero.git</developerConnection>
+    <tag>3.1.159</tag>
+  </scm>
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-antrun-plugin</artifactId>
+        <version>1.8</version>
+        <executions>
+          <execution>
+            <phase>compile</phase>
+            <configuration>
+              <target>
+                <unzip src="src/main/jar/RobotLibrary.jar" dest="target/classes/"/>
+              </target>
+            </configuration>
+            <goals>
+              <goal>run</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+</project>
