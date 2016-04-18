@@ -3,13 +3,13 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>uk.co.neuralcubes</groupId>
   <artifactId>libsphero</artifactId>
-  <version>3.1.159</version>
+  <version>3.1.159-libmuse</version>
   <packaging>jar</packaging>
   <scm>
     <connection>scm:git:git@github.com:neuralcubes/libsphero.git</connection>
     <url>scm:git:git@github.com:neuralcubes/libsphero.git</url>
     <developerConnection>scm:git:git@github.com:neuralcubes/libsphero.git</developerConnection>
-    <tag>3.1.159</tag>
+    <tag>3.1.159-libmuse</tag>
   </scm>
   <build>
     <plugins>
